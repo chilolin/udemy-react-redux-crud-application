@@ -1,12 +1,16 @@
 import React from 'react';
 
-const App = () => {
+export const App = () => {
   return (
-    <>
-      <label htmlFor="bar">bar</label>
-      <input type="text" onChange={() => console.log("I am clicked!")} />
-    </>
+    <div>
+      <Cat />
+      <Cat />
+      <Cat />
+      <Cat />
+    </div>
   );  
 }
 
-export default App;
+const Cat = () => {
+  return <div>Meow!</div>;
+}
